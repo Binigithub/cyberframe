@@ -168,45 +168,378 @@ app.controller('ScreenshotReportController', function ($scope) {
 
     var results = [
     {
-        "description": "should get 100 words|Word from book",
+        "description": "should have correct page title|Manager Login|Bank Manager",
         "passed": true,
         "pending": false,
         "os": "Windows NT",
-        "instanceId": 113388,
+        "instanceId": 16832,
         "browser": {
             "name": "chrome",
-            "version": "70.0.3538.77"
+            "version": "71.0.3578.98"
         },
-        "message": "Passed",
-        "browserLogs": [
-            {
-                "level": "WARNING",
-                "message": "https://www.google.com/logos/2018/veteransday18/veteransday18.js 67 The Web Audio autoplay policy will be re-enabled in Chrome 71 (December 2018). Please check that your website is compatible with it. https://goo.gl/7K7WLu",
-                "timestamp": 1541949836636,
-                "type": ""
-            },
-            {
-                "level": "WARNING",
-                "message": "http://www.yougowords.com/js/wordsLoading.js 0 Synchronous XMLHttpRequest on the main thread is deprecated because of its detrimental effects to the end user's experience. For more help, check https://xhr.spec.whatwg.org/.",
-                "timestamp": 1541949842276,
-                "type": ""
-            },
-            {
-                "level": "SEVERE",
-                "message": "http://www.yougowords.com/start-with-b/end-with-e 11:19 Uncaught SyntaxError: Unexpected token ,",
-                "timestamp": 1541949842392,
-                "type": ""
-            },
-            {
-                "level": "WARNING",
-                "message": "javascript - The resource http://pagead2.googlesyndication.com/pagead/js/r20181107/r20180604/show_ads_impl.js was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.",
-                "timestamp": 1541949846262,
-                "type": ""
-            }
-        ],
-        "screenShotFile": "images\\00e7009b-006e-0094-006e-0076006b004b.png",
-        "timestamp": 1541949833967,
-        "duration": 14161
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\004a00db-00f6-0000-00c2-001900f9005c.png",
+        "timestamp": 1546793335566,
+        "duration": 4082
+    },
+    {
+        "description": "should display home button|Manager Login|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\003800d5-0082-0089-0064-005600f500a4.png",
+        "timestamp": 1546793340191,
+        "duration": 1617
+    },
+    {
+        "description": "should display page header|Manager Login|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00c300ee-0071-00bc-0004-001f00dc00f0.png",
+        "timestamp": 1546793342126,
+        "duration": 665
+    },
+    {
+        "description": "should display login option for Bank Manager|Manager Login|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00f100f0-00f7-006a-00a1-006700eb00e4.png",
+        "timestamp": 1546793343116,
+        "duration": 547
+    },
+    {
+        "description": "should stay at the homepage when Home Button is clicked|Manager Login|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00cb00bc-0063-0057-00af-00e6003f00f2.png",
+        "timestamp": 1546793343950,
+        "duration": 790
+    },
+    {
+        "description": "should login as Bank Manager|Manager Login|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\002c00d3-009a-0025-007a-00ac00b1003c.png",
+        "timestamp": 1546793345038,
+        "duration": 978
+    },
+    {
+        "description": "should display  options for manager|Manager Login|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\006800ae-00d2-005b-0042-007b00fe00bb.png",
+        "timestamp": 1546793346310,
+        "duration": 782
+    },
+    {
+        "description": "should navigate back to home page from Manager Login Page|Manager Login|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\002200ce-00d3-00de-007d-001d00e300f7.png",
+        "timestamp": 1546793347421,
+        "duration": 901
+    },
+    {
+        "description": "should display form for Adding Customer|Adding a Customer|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\007500d7-0004-007b-00e3-0084003e003b.png",
+        "timestamp": 1546793349386,
+        "duration": 400
+    },
+    {
+        "description": "should list all the labels|Adding a Customer|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\005a00f2-00f7-00e4-0074-00f900eb002d.png",
+        "timestamp": 1546793350079,
+        "duration": 115
+    },
+    {
+        "description": "should require firstname|Adding a Customer|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\0065000f-00f5-00b0-00d0-0029007d00be.png",
+        "timestamp": 1546793350496,
+        "duration": 36
+    },
+    {
+        "description": "should require lastname|Adding a Customer|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\001a00d6-0022-00a8-0059-005a00890001.png",
+        "timestamp": 1546793350867,
+        "duration": 25
+    },
+    {
+        "description": "should require postcode|Adding a Customer|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\004b00ae-00b4-0019-001f-00d200bf0082.png",
+        "timestamp": 1546793351221,
+        "duration": 28
+    },
+    {
+        "description": "should add customer|Adding a Customer|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00d00008-0082-0058-008b-00d1003d00fc.png",
+        "timestamp": 1546793351557,
+        "duration": 765
+    },
+    {
+        "description": "should display new customer first name in list|Adding a Customer|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\0093008f-006e-004f-00b8-00c500ba00be.png",
+        "timestamp": 1546793352672,
+        "duration": 462
+    },
+    {
+        "description": "should display new customer last name in list|Adding a Customer|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00bc0050-00ba-002a-000d-0047001c00d5.png",
+        "timestamp": 1546793353445,
+        "duration": 57
+    },
+    {
+        "description": "should display new customer post code in list|Adding a Customer|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00a0000c-00cb-00ec-000f-000800bb00f0.png",
+        "timestamp": 1546793353857,
+        "duration": 62
+    },
+    {
+        "description": "should have no account number for the user that was created|Adding a Customer|Bank Manager",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\002600c6-0050-0041-0083-0051000300e4.png",
+        "timestamp": 1546793354230,
+        "duration": 75
+    },
+    {
+        "description": "should add customer: Elon Musk|Jasmine Data Provider ",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00aa0037-0060-00cb-007f-00c0004200bc.png",
+        "timestamp": 1546793355412,
+        "duration": 569
+    },
+    {
+        "description": "should add customer: Warren Buffet|Jasmine Data Provider ",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00c50011-0004-001c-006c-001900540099.png",
+        "timestamp": 1546793356321,
+        "duration": 523
+    },
+    {
+        "description": "should add customer: Amanico Ortega|Jasmine Data Provider ",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\00360070-001c-0035-00c8-004400830016.png",
+        "timestamp": 1546793357140,
+        "duration": 616
+    },
+    {
+        "description": "should check if element is displayed|Demonstrating Jasmine spec reporter",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "instanceId": 16832,
+        "browser": {
+            "name": "chrome",
+            "version": "71.0.3578.98"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "images\\004b00a0-00f4-00f1-0055-00fc009b0009.png",
+        "timestamp": 1546793358064,
+        "duration": 2117
     }
 ];
 

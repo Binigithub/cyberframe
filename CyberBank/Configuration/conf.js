@@ -4,71 +4,122 @@ var HtmlReporter = require('protractor-beautiful-reporter');
 
 exports.config = {
 
-   directConnect : true,
-
-  capabilities: {
-
-    browserName: 'chrome'
-
-  },
-
-  
-  specs: ['../Tests/Test.js'],
-  //specs: ['../Tests/BankManagerSimple.spec.js'], 
-  //specs: ['../Tests/DataProvider.spec.js'],
-  //suites:{
-    //smoke: ['../Tests/BankManagerSimple.spec.js','../Tests/demo.spec.js'],
-   //regression: ['../Test/*.spec.js'],
-  //},
+	//specs: ['../Tests/demo.spec.js'],
 
 
 
-onPrepare: function () {
+	suites:{
 
-    browser.driver.manage().window().maximize();
 
-    jasmine.getEnv().addReporter(new SpecReporter({
 
-        displayFailuresSummary: true,
-        displayFailuredSpec: true,
-        displaySuiteNumber: true,
-        displaySpecDuration: true,
-        showstack: false
+		smoke:['../Tests/demo.spec.js'],
 
-      }));
+		regression:['../Tests/*.spec.js']
 
-      // Add a screenshot reporter and store screenshots to `/tmp/screenshots`:
+	},
 
-      jasmine.getEnv().addReporter(new HtmlReporter({
+ 
 
-        baseDirectory: '../report/screenshots',
+	sauceUser: process.env.SAUCE_USERNAME,
 
-        preserveDirectory: false,
+	sauceKey: process.env.SAUCE_ACCESS_KEY,
 
-        screenshotsSubfolder: 'images',
 
-        jsonsSubfolder: 'jsons',
 
-        docName: 'CyberBank-Report.html'
+	// restartBrowserBetweenTests: true,
 
-     }).getJasmine2Reporter());
 
-  
 
-},
+    multiCapabilities: [
 
-    
+		{
 
-    jasmineNodeOpts: {
+        browserName: 'firefox',
 
-        showColors: true, 
+        version: '61.0',
 
-        defaultTimeoutInterval: 30000,    
+        platform: 'macOS 10.14',
 
-        print: function() {}
+        name: "firefox-tests",
 
-        
+        shardTestFiles: true,
 
-}
+        maxInstances: 25
+
+	}, 
+
+	{
+
+        browserName: 'chrome',
+
+        version: '70.0',
+
+        platform: 'Windows 10',
+
+        name: "chrome-tests",
+
+        shardTestFiles: true,
+
+        maxInstances: 25
+
+    }],
+
+
+
+	onPrepare: function () {
+
+		// browser.ignoreSynchronization = true;	// if not an Angular app
+
+
+
+		jasmine.getEnv().addReporter({
+
+			specStarted: function(result) {
+
+				browser.getCapabilities().then(function (capabilities) {
+
+					var browserName = capabilities.get("browserName");
+
+					browser.executeScript("sauce:job-name=" + browserName + ":" + result.fullName);
+
+				});
+
+			}
+
+		});
+
+
+
+// 		var AllureReporter = require('jasmine-allure-reporter');
+
+// 		jasmine.getEnv().addReporter(new AllureReporter({
+
+// 		  resultsDir: 'allure-results'
+
+// 		}));
+
+
+
+	},
+
+
+
+	onComplete: function () {
+
+		var printSessionId = function (jobName) {
+
+			browser.getSession().then(function (session) {
+
+				console.log('SauceOnDemandSessionID=' + session.getId() + ' job-name=' + jobName);
+
+			});
+
+		}
+
+		
+
+		printSessionId("Insert Job Name Here");
+
+	},
 
 };

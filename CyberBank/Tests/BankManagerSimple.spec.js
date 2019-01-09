@@ -74,7 +74,7 @@
 
 // });
 
-//after page
+
 
 require('../Utilities/CustomLocators.js');
 
@@ -302,5 +302,6 @@ it('should have no account number for the user that was created', () => {
 });
 
 });
-})
+
+});
 
