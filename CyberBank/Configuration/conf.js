@@ -34,7 +34,7 @@ exports.config = {
 
         version: '61.0',
 
-        platform: 'macOS 10.14',
+        //platform: 'macOS 10.14',
 
         name: "firefox-tests",
 
