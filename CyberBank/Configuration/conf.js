@@ -6,21 +6,61 @@ exports.config = {
 
    directConnect : true,
 
-  capabilities: {
+//   capabilities: {
 
-    browserName: 'chrome'
+//     browserName: 'chrome'
 
-  },
+//   },
+   multiCapabilities: [
+
+		{
+
+        browserName: 'firefox',
+
+        version: '61.0',
+
+        platform: 'macOS 10.14',
+
+        name: "firefox-tests",
+
+        shardTestFiles: true,
+
+        maxInstances: 25
+
+	}, 
+
+	{
+
+        browserName: 'chrome',
+
+        version: '70.0',
+
+        platform: 'Windows 10',
+
+        name: "chrome-tests",
+
+        shardTestFiles: true,
+
+        maxInstances: 25
+
+    }],
 
   
-  specs: ['../Tests/Test.js'],
+  //specs: ['../Tests/Test.js'],
   //specs: ['../Tests/BankManagerSimple.spec.js'], 
   //specs: ['../Tests/DataProvider.spec.js'],
   //suites:{
     //smoke: ['../Tests/BankManagerSimple.spec.js','../Tests/demo.spec.js'],
    //regression: ['../Test/*.spec.js'],
   //},
+suites:{
+   smoke:['../Tests/Demo.spec.js'],
+   regression:['../Tests/*.spec.js']
 
+	},
+   sauceUser: process.env.SAUCE_USERNAME,
+
+	sauceKey: process.env.SAUCE_ACCESS_KEY,
 
 
 onPrepare: function () {
