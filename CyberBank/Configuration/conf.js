@@ -1,22 +1,18 @@
-let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
-
-var HtmlReporter = require('protractor-beautiful-reporter');
-
 exports.config = {
 
-	// specs: ['../Tests/demo.spec.js'],
+	specs: ['../Tests/demo.spec.js'],
 
 
 
-	suites:{
+// 	suites:{
 
 
 
-		smoke:['../Tests/demo.spec.js'],
+// 		smoke:['../Tests/demo.spec.js'],
 
-		regression:['../Tests/*.spec.js']
+// 		regression:['../Tests/*.spec.js']
 
-	},
+// 	},
 
  
 
@@ -121,5 +117,15 @@ exports.config = {
 		printSessionId("Insert Job Name Here");
 
 	},
+
+
+
+	
+
+
+
+
+
+
 
 };
