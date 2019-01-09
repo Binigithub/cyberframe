@@ -54,7 +54,7 @@ exports.config = {
    //regression: ['../Test/*.spec.js'],
   //},
 suites:{
-   smoke:['../Tests/Demo.spec.js'],
+   smoke:['../Tests/demo.spec.js'],
    regression:['../Tests/*.spec.js']
 
 	},
