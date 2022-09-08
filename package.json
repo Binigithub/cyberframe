@@ -12,7 +12,7 @@
   "author": "Biniam",
   "license": "ISC",
   "devDependencies": {
-    "exceljs": "^1.6.2",
+    "exceljs": "^1.15.0",
     "jasmine-data-provider": "^2.2.0",
     "jasmine-spec-reporter": "^4.2.1",
     "protractor": "^5.4.1",
